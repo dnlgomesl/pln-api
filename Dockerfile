@@ -1,8 +1,10 @@
 FROM python:3.8-slim-buster
 
 ARG KEY
+ARG MUSIX
 
 ENV KEY_API=$KEY
+ENV MUSIX=$MUSIX
 
 WORKDIR /app
 
