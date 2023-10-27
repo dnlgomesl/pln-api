@@ -37,14 +37,16 @@ def get_sentiment_by_lyrics(music):
 
     prompt = f"""
     De acordo com a lista com os sentimentos {SENT} \
-    Me retorne um html indicando um sentimento dessa lista para cada trecho da música abaixo. \
-    O html terá apenas tags <p>. Cada trecho vai ser uma tag <p> e o id da tag será o sentimento. \
+    Para cada trecho da música me retorne cada sentença seguida por um sentimento da lista de sentimentos, \
+    o sentimento precisa estar contido na lista de sentimentos {SENT}. \
+    Você deme retornar apenas o trecho e o sentimento separado por hifen, um trecho em cada linha \
 
     {music} \
     """
 
     response = get_completion(prompt)
-    return {"html": response}
+    data = format_response(response)
+    return {"data": data}
 
 def get_sentiment_by_title(artist, track):
     lyric = get_music_lyric(artist, track)
@@ -53,3 +55,28 @@ def get_sentiment_by_title(artist, track):
     else:
         response = get_sentiment_by_lyrics(lyric)
         return response
+
+def format_response(res):
+    arr = res.split("\n")
+    formated_res = []
+    for s in arr:
+        splited = s.split("-")
+        res = []
+        i = 0
+        for item in splited:
+            if item != '':
+                splited = item.split(" ")
+                res2 = []
+                for item in splited:
+                    if item != '':
+                        res2.append(item)
+                if i == 1:
+                    res.append(" ".join(res2).lower())
+                else:
+                    res.append(" ".join(res2))
+                i += 1
+
+        if len(res) == 2:
+            formated_res.append(res)
+
+    return formated_res
