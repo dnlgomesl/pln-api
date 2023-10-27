@@ -61,7 +61,80 @@ Exemplo de body:
 Exemplo de resposta de sucesso:
 ```json
 {
-	"html": "<html>\n  <p id=\"alegria\">Não tão complicado</p>\n  <p id=\"satisfação\">De estarmos juntos</p>\n  <p id=\"amor\">E só ser amado</p>\n  <p id=\"amor\">E amar, amar</p>\n  <p id=\"alegria\">Sem querer o certo</p>\n  <p id=\"alegria\">Sem querer um lado</p>\n  <p id=\"satisfação\">De estarmos perto e só ser amado</p>\n  <p id=\"amor\">E amar, amar</p>\n  <p id=\"amor\">Desde a primeira vez que te vi</p>\n  <p id=\"amor\">Eu senti um chamado</p>\n  <p id=\"amor\">De uma chama que ardeu</p>\n  <p id=\"confiança\">E me deu um recado</p>\n  <p id=\"amor\">De que eu podia te amar</p>\n  <p id=\"amor\">E por você ser amado</p>\n  <p id=\"alegria\">Coisa mais simples</p>\n  <p id=\"alegria\">Não tem que ser complicado</p>\n  <p id=\"amor\">Só ser amado e amar</p>\n</html>"
+	"data": [
+		[
+			"Pode ser mais simples",
+			"satisfação"
+		],
+		[
+			"Não tão complicado",
+			"satisfação"
+		],
+		[
+			"De estarmos juntos",
+			"amor"
+		],
+		[
+			"E só ser amado",
+			"amor"
+		],
+		[
+			"E amar, amar",
+			"amor"
+		],
+		[
+			"Sem querer o certo",
+			"confiança"
+		],
+		[
+			"Sem querer um lado",
+			"confiança"
+		],
+		[
+			"De estarmos perto e só ser amado",
+			"amor"
+		],
+		[
+			"E amar, amar",
+			"amor"
+		],
+		[
+			"Desde a primeira vez que te vi",
+			"alegria"
+		],
+		[
+			"Eu senti um chamado",
+			"medo"
+		],
+		[
+			"De uma chama que ardeu",
+			"amor"
+		],
+		[
+			"E me deu um recado",
+			"confiança"
+		],
+		[
+			"De que eu podia te amar",
+			"amor"
+		],
+		[
+			"E por você ser amado",
+			"amor"
+		],
+		[
+			"Coisa mais simples",
+			"satisfação"
+		],
+		[
+			"Não tem que ser complicado",
+			"satisfação"
+		],
+		[
+			"Só ser amado e amar",
+			"amor"
+		]
+	]
 }
 ```
 
@@ -77,6 +150,63 @@ Exemplo de body:
 Exemplo de resposta de sucesso:
 ```json
 {
-	"html": "<p id=\"tristeza\">Essa noite eu notei que você demorou pra dormir</p>\n<p id=\"medo\">Caminhou pela casa, ligou a TV, eu ouvi</p>\n<p id=\"tristeza\">Você sussurrando, chorando baixinho pra não me acordar</p>\n<p id=\"confiança\">Se estiver precisando de amigo pra desabafar</p>\n<p id=\"confiança\">Se for alguma coisa comigo, vamos conversar</p>\n<p id=\"medo\">Eu não quero correr o perigo de um dia você me deixar</p>\n<p id=\"amor\">Escolhi você pra ser minha mulher</p>\n<p id=\"satisfação\">E sou tão fiel à nossa relação</p>\n<p id=\"insegurança\">Pelo amor de deus, se for insegurança, tira do teu coração</p>\n<p id=\"alegria\">Já é tarde, vamos nos deitar</p>\n<p id=\"confiança\">Se quiser conversar na nossa cama</p>\n<p id=\"satisfação\">Porque sei que tudo isso passa</p>\n<p id=\"amor\">Você me abraça e a gente se ama</p>\n<p id=\"confiança\">Eu não vou te trair com ninguém</p>"
+	"data": [
+		[
+			"Essa noite eu notei que você demorou pra dormir",
+			"tristeza"
+		],
+		[
+			"Caminhou pela casa, ligou a TV, eu ouvi",
+			"medo"
+		],
+		[
+			"Você sussurrando, chorando baixinho pra não me acordar",
+			"tristeza"
+		],
+		[
+			"Se estiver precisando de amigo pra desabafar",
+			"confiança"
+		],
+		[
+			"Se for alguma coisa comigo, vamos conversar",
+			"confiança"
+		],
+		[
+			"Eu não quero correr o perigo de um dia você me deixar",
+			"medo"
+		],
+		[
+			"Escolhi você pra ser minha mulher",
+			"amor"
+		],
+		[
+			"E sou tão fiel à nossa relação",
+			"satisfação"
+		],
+		[
+			"Pelo amor de deus, se for insegurança, tira do teu coração",
+			"confiança"
+		],
+		[
+			"Já é tarde, vamos nos deitar",
+			"satisfação"
+		],
+		[
+			"Se quiser conversar na nossa cama",
+			"confiança"
+		],
+		[
+			"Porque sei que tudo isso passa",
+			"confiança"
+		],
+		[
+			"Você me abraça e a gente se ama",
+			"amor"
+		],
+		[
+			"Eu não vou te trair com ninguém",
+			"confiança"
+		]
+	]
 }
 ```
