@@ -36,9 +36,9 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
 def get_sentiment_by_lyrics(music):
 
     prompt = f"""
-    Para cada trecho da música abaixo me retorne cada sentença seguida por um sentimento dentre {SENT}, \
-    o sentimento obrigatoriamente precisa ser um desses sentimentos: {SENT}. \
-    Você deme retornar apenas o trecho e o sentimento separado por hifen, um trecho em cada linha \
+    Escolha entre {SENT} e associei a cada trecho da música abaixo. Você deve escolher obrigatoriamente entre {SENT}. \
+    E relacionar com o trecho da música. \
+    Você deme retornar apenas o trecho e o que foi escolhido entre {SENT} separado por hifen, um trecho em cada linha \
 
     {music} \
     """
