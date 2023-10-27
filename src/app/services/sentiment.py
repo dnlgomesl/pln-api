@@ -3,7 +3,7 @@ import requests
 import os
 openai.api_key = os.environ['KEY_API']
 
-SENT = f"""raiva, alegria, medo, nojo, tristeza, satisfação, confiança, amor"""
+SENT = f"""raiva, alegria, medo, nojo, tristeza, satisfação, confiança, amor ou esperança"""
 
 def get_music_lyric(artist_name, track_name):
     url = f'http://api.musixmatch.com/ws/1.1/matcher.lyrics.get'
@@ -36,9 +36,8 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
 def get_sentiment_by_lyrics(music):
 
     prompt = f"""
-    De acordo com a lista com os sentimentos {SENT} \
-    Para cada trecho da música me retorne cada sentença seguida por um sentimento da lista de sentimentos, \
-    o sentimento precisa estar contido na lista de sentimentos {SENT}. \
+    Para cada trecho da música abaixo me retorne cada sentença seguida por um sentimento dentre {SENT}, \
+    o sentimento obrigatoriamente precisa ser um desses sentimentos: {SENT}. \
     Você deme retornar apenas o trecho e o sentimento separado por hifen, um trecho em cada linha \
 
     {music} \
